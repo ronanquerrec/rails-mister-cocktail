@@ -1,0 +1,14 @@
+<h1>La page du cocktail</h1>
+
+<p><%= @cocktail.name %></p>
+<p><%= @doses.each do |dose| %>
+  <ul>
+    <li><%= dose.description %></li>
+
+  </ul>
+
+<% end %> %></p>
+<%= link_to "back to cocktails", cocktails_path %>
+
+<p><%= link_to "create a dose", new_cocktail_dose_path(@cocktail) %></p>
+
